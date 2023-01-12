@@ -1,0 +1,10 @@
+[package]
+name = "patternizer"
+version = "0.1.0"
+edition = "2021"
+authors = ["Matthew McAllister <matthew.mcallister.0@gmail.com>"]
+description = "Generates grammars for structured text data."
+
+[dependencies]
+regex = "1.7.0"
+smartstring = "1.0.1"
