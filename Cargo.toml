@@ -1,10 +1,15 @@
 [package]
-name = "patternizer"
+name = "patternizer-cpython"
 version = "0.1.0"
 edition = "2021"
 authors = ["Matthew McAllister <matthew.mcallister.0@gmail.com>"]
-description = "Generates grammars for structured text data."
+
+[lib]
+crate-type = ["cdylib"]
 
 [dependencies]
 regex = "1.7.0"
-smartstring = "1.0.1"
+
+[dependencies.cpython]
+version = "0.7.1"
+features = ["extension-module"]
